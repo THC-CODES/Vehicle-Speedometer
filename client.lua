@@ -11,7 +11,6 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(1)
         local speed = (GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false))*2.2369)
-        -- Condition to check if the ped is in a vehicle
         if(IsPedInAnyVehicle(GetPlayerPed(-1), false)) then
             text(math.floor(speed))
         end
