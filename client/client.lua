@@ -9,7 +9,7 @@ end
 Citizen.CreateThread(function()
 
     while true do
-        Citizen.Wait(1)
+        Citizen.Wait(0)
         local speed = (GetEntitySpeed(GetVehiclePedIsIn(PlayerPedId(), false))*2.2369)
         if(IsPedInAnyVehicle(PlayerPedId(), false)) then
             text(math.floor(speed))
